@@ -1,7 +1,9 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
 # JetBrains IDEs
 .idea/
 
-# Logs
+# Debug logs
 logs
 *.log
 npm-debug.log*
@@ -10,7 +12,33 @@ yarn-error.log*
 lerna-debug.log*
 
 # Dependencies
-node_modules/
+/node_modules
+/.pnp
+.pnp.js
 
-# macOS
-.DS_STORE
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# .env files
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+
+# Vercel
+.vercel
+
+# Misc
+.DS_Store
+*.pem

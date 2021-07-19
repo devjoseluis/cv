@@ -11,5 +11,20 @@
   "bugs": {
     "url": "https://github.com/devjoseluis/cv/issues"
   },
-  "homepage": "https://github.com/devjoseluis/cv#readme"
+  "homepage": "https://github.com/devjoseluis/cv#readme",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^11.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.14",
+    "typescript": "^4.3.5"
+  }
 }
