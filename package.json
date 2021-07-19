@@ -1,0 +1,15 @@
+{
+  "name": "curriculum-vitae",
+  "version": "0.1.0",
+  "description": "Online Curriculum Vitae",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devjoseluis/cv.git"
+  },
+  "author": "José Luis Morales <hola@josemorales.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devjoseluis/cv/issues"
+  },
+  "homepage": "https://github.com/devjoseluis/cv#readme"
+}
