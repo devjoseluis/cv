@@ -1,9 +1,9 @@
 /**
- *  @type {import('next/dist/next-server/server/config').NextConfig} 
+ *  @type {import('next/dist/next-server/server/config').NextConfig}
  */
 
- const nextConfig = {
-  reactStrictMode: true,
- };
+/* eslint-env commonjs */
 
- module.exports = nextConfig;
+module.exports = {
+  reactStrictMode: true,
+};
