@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+// Import a Google Font
+@import url('https://fonts.googleapis.com/css?family=Lato:400,900|Raleway:600&display=swap');
+
+// Set your brand colors
+$blue: hsl(196, 100%, 36%);
+
+// Update Bulma's global variables
+$primary: $blue;
+
+// Update some of Bulma's component variables
+$title-family: 'Raleway', sans-serif;
+$subtitle-family: 'Lato', sans-serif;
+
+// Import only what you need from Bulma
+@import '~bulma/sass/utilities/_all';
+@import '~bulma/sass/base/_all';
+@import '~bulma/sass/elements/button';
+@import '~bulma/sass/elements/container';
+@import '~bulma/sass/elements/content';
+@import '~bulma/sass/elements/icon';
+@import '~bulma/sass/elements/title';
+@import "~bulma/sass/helpers/_all";
+@import '~bulma/sass/layout/footer';
+@import '~bulma/sass/layout/hero';
+
+.hero {
+  position: relative;
+  background-image: url('https://source.unsplash.com/j32YnXg_TQQ');
+  background-size: cover;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    width: 100%;
+    height: 100%;
+    background: hsl(0, 0%, 7%);
+    content: '';
+  }
+}
+
+.hero-body {
+  padding: 3rem 0.5rem;
+}
+
+.title.name {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+  color: $white;
+  font-size: 2.25rem;
+  line-height: 1.1;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+  @include from (22rem) {
+    font-size: 2.5rem;
+  }
+
+  @include from (25rem) {
+    font-size: 2.75rem;
+  }
+
+  @include from (30rem) {
+    font-size: 3.25rem;
+  }
+
+  @include from (37.5rem) {
+    margin-bottom: 0.6rem;
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  @include from (45rem) {
+    font-size: 4.75rem;
+  }
+
+  @include from (52.5rem) {
+    font-size: 5.25rem;
+  }
+}
+
+.subtitle.hello {
+  margin-bottom: 0.3rem;
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.565;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.2rem;
+
+  @include from (25rem) {
+    font-size: 1.3rem;
+  }
+
+  @include from (37.5rem) {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+  }
+
+  @include from (52.5rem) {
+    font-size: 1.3rem;
+  }
+
+  + .title.name {
+    margin-top: 0;
+  }
+}
+
+.job-title {
+  margin-bottom: 2rem;
+  color: $white;
+  line-height: 2.4rem;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.2rem;
+
+  @include from (22rem) {
+    font-size: 1.2rem;
+  }
+
+  @include from (37.5rem) {
+    font-size: 1.3rem;
+
+    span {
+      &::after,
+      &::before {
+        display: inline-block;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: larger;
+        text-align: center;
+        content: '|';
+      }
+
+      &::after {
+        padding: 0 8px 0 14px;
+      }
+
+      &::before {
+        padding: 0 14px 0 8px;
+      }
+    }
+  }
+}
+
+.download-btn {
+  padding: 1.75rem 1rem 1.75rem 1.5rem;
+  border-width: 2px;
+  border-radius: 0;
+  letter-spacing: 0.25rem;
+  transition: all 0.3s ease-in-out;
+
+  .icon:first-child:last-child {
+    margin-right: 0.5rem;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.social {
+  margin-top: 2.5rem;
+
+  .button.is-primary.is-outlined.is-inverted {
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 2.25rem;
+  }
+
+  .icon:first-child:last-child svg {
+    width: 100%;
+    height: 100%;
+  }
+}
